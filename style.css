@@ -36,13 +36,20 @@ h3 {
 .aside {
   margin-top: -80px;
   padding-top: 80px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   z-index: -1;
-  background-color: tomato;
   .div-image {
+    background-color: aqua;
     height: 150px;
     width: 150px;
-    border: 1px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    border: 6px white solid;
     border-radius: 50%;
+
+    position: relative;
+    left: 105px;
+    top: 20px;
   }
 }
 
