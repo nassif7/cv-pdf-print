@@ -10,19 +10,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="root-style.css" />
-  <link rel="stylesheet" href="new.css" />
+  <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <div class="page container-fluid ">
-    <div class="cv-wrapper px-0">
-      <div class="back-ground-div"></div>
-      <header class="row mx-0 justify-content-between align-items-end align-content-end px-5 pb-1 mb-4">
-        <h1 class="cv-title-font text-white">Ganushka Ivanova Ganusheva</h1>
-        <img height="64" src="TransparentLogo.png" alt="logo " />
-      </header>
-      <main class="row mx-0">
+  <div class="cv-wrapper container-fluid page">
+    <header class="row justify-content-between align-items-end px-3 mb-5">
+      <div class="personal-name">
+        <h1 class="cv-header-name text-whitet">Ganushka Ivanova Ganusheva</h1>
+      </div>
+
+      <div class="logo">
+        <img height="50" src="TransparentLogo.png" alt="logo " />
+      </div>
+    </header>
+    <div class="back-ground-div"></div>
+    <main>
+      <div class="row">
         <aside class="cv-side-bar col-4">
           <div class="mb-4">
             <img class="profile-pic" width="240" height="240" src="https://www.marineria.it/PROFoto/54313.jpg"
@@ -64,11 +69,10 @@
             </div>
           </div>
         </aside>
-        <div class="cv-main col-8">
-          <section class="mb-2 intro margin-fix">
+        <div class="home col-8 pl-4">
 
-
-            <h2 class="cv-header-name text-primary position-label">Stewardess</h2>
+          <section class="mb-2 intro">
+            <h2 class="cv-header-name position-label">Stewardess</h2>
             <p class="text-black d-block font-weight-6 mb-0">Additional skills:</p>
             <p class="d-inline">Cook</p>
             -
@@ -77,13 +81,12 @@
             <p class="d-inline">Baby sitter</p>
             -
             <p class="d-inline">Chief Stewardess</p>
-
-
-
-            <p class="text-success font-weight-6 mb-0">Available from :12/12/2024</p>
-
+            <div>
+              <p class="text-success font-weight-6 mb-0">Available from :12/12/2024</p>
+            </div>
           </section>
-          <section class="row navigation mb-2 pt-2">
+
+          <section class="row navigation mb-2">
             <div class="col">
               <p class="text-black d-block font-weight-6 mb-0 margin-fix">Navigation Experience</p>
               <ul class="bullets mb-0">
@@ -102,7 +105,7 @@
               </ul>
             </div>
           </section>
-          <section id="competency" class="row mb-2">
+          <div id="competency" class="row mb-2">
             <div class="col-6 pl-3">
               <div id="Seamans-Book">
                 <p class="text-primary d-block font-weight-6 mb-0">Seaman's Book</p>
@@ -133,8 +136,8 @@
                 <li>Corsi STCW'95</li>
               </ul>
             </div>
-          </section>
-          <section id="personal-into" class="mb-2">
+          </div>
+          <div id="personal-into" class="mb-2">
             <p class="text-primary d-block font-weight-6 mb-0">personal information</p>
             <p>
               Salve, sono Xhoana ho 31 anni e vivo in Umbria,sono di origini albanesi ma vivo in Italia da quando
@@ -144,32 +147,10 @@
               Nel 2020 mi sono specializzata come massaggiatrice con la scuola Diabasi.
               Nelle ultime due estati ho navigato su una barca a vela privata di 14 metri occupandomi di tutto a bordo
             </p>
-          </section>
-          <section id="navigation-experience" class="mb-2">
-
-            <h3 class="text-primary">Sea Experiences 3 years 2 months</h3>
-
-            <div class="experience mb-2 py-2">
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Period:</p>
-                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Unit:</p>
-                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
-                <p class="d-inline mb-0">PRIVATE</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Rule held:</p>
-                <p class="d-inline mb-0">SOLE STEWARDESS</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Main tasks:</p>
-                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
-              </div>
+          </div>
+          <div id="navigation-experience" class="mb-2">
+            <div>
+              <h3>Sea Experiences 3 years 2 months</h3>
             </div>
             <div class="experience mb-2 py-2">
               <div class="experience-line">
@@ -236,75 +217,6 @@
                 <p class="d-inline mb-0 text-muted">Main tasks:</p>
                 <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
               </div>
-            </div>
-            <div class="experience mb-2 py-2">
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Period:</p>
-                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Unit:</p>
-                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
-                <p class="d-inline mb-0">PRIVATE</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Rule held:</p>
-                <p class="d-inline mb-0">SOLE STEWARDESS</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Main tasks:</p>
-                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
-              </div>
-
-            </div>
-            <div class="experience mb-2 py-2">
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Period:</p>
-                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Unit:</p>
-                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
-                <p class="d-inline mb-0">PRIVATE</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Rule held:</p>
-                <p class="d-inline mb-0">SOLE STEWARDESS</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Main tasks:</p>
-                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
-              </div>
-
-            </div>
-            <div class="experience mb-2 py-2">
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Period:</p>
-                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Unit:</p>
-                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
-                <p class="d-inline mb-0">PRIVATE</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Rule held:</p>
-                <p class="d-inline mb-0">SOLE STEWARDESS</p>
-              </div>
-              <div class="experience-line">
-                <p class="d-inline mb-0 text-muted">Main tasks:</p>
-                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
-              </div>
-
             </div>
             <div class="experience mb-2 py-2">
               <div class="experience-line">
@@ -397,11 +309,101 @@
               </div>
 
             </div>
-          </section>
+            <div class="experience mb-2 py-2">
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Period:</p>
+                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Unit:</p>
+                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
+                <p class="d-inline mb-0">PRIVATE</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Rule held:</p>
+                <p class="d-inline mb-0">SOLE STEWARDESS</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Main tasks:</p>
+                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
+              </div>
+            </div>
+            <div class="experience mb-2 py-2">
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Period:</p>
+                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Unit:</p>
+                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
+                <p class="d-inline mb-0">PRIVATE</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Rule held:</p>
+                <p class="d-inline mb-0">SOLE STEWARDESS</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Main tasks:</p>
+                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
+              </div>
+
+            </div>
+            <div class="experience mb-2 py-2">
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Period:</p>
+                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Unit:</p>
+                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
+                <p class="d-inline mb-0">PRIVATE</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Rule held:</p>
+                <p class="d-inline mb-0">SOLE STEWARDESS</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Main tasks:</p>
+                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
+              </div>
+
+            </div>
+            <div class="experience mb-2 py-2">
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Period:</p>
+                <p class="d-inline mb-0">07/04/2021 - 31/10/2021</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Unit:</p>
+                <p class="d-inline text-success font-weight-bold mb-0">S/Y ZEFIRA 50mt</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Intended Use, area:</p>
+                <p class="d-inline mb-0">PRIVATE</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Rule held:</p>
+                <p class="d-inline mb-0">SOLE STEWARDESS</p>
+              </div>
+              <div class="experience-line">
+                <p class="d-inline mb-0 text-muted">Main tasks:</p>
+                <p class="d-inline mb-0">orginizing and implementing the boat operational system and schedule</p>
+              </div>
+
+            </div>
+          </div>
           </section>
         </div>
-      </main>
-    </div>
+    </main>
   </div>
 </body>
 

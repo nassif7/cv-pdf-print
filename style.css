@@ -1,8 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
 .cv-wrapper {
+  font-size: 11px;
   position: relative;
   width: 21cm;
   min-height: 29.7cm;
@@ -10,52 +7,44 @@ body {
   border: 1px solid #ccc;
 }
 
+.cv-header-name {
+  font-family: 'Playfair Display', serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  /* font-style: normal; */
+}
+
 header {
   position: absolute;
   top: 0px;
   /* left: 0px; */
   width: 100%;
-  height: 60px;
+  height: 80px;
 
   z-index: 100;
-
-  /* background: linear-gradient(
-    177deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 40%,
-    rgba(255, 102, 0, 1) 41%,
-    rgba(255, 102, 0, 1) 100%
-  ); */
-  /* display: flex;
-  justify-content: space-around;
-  align-items: end; */
   .personal-name {
-    /* position: relative; */
-    /* top: 7px; */
-    /* right: -90px; */
     margin-top: 35px;
-    margin-left: 150px;
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 }
 
 .logo {
-  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .back-ground-div {
   -webkit-print-color-adjust: exact;
   -webkit-filter: opacity(1);
   width: 100%;
-  height: 60px;
+  height: 80px;
   background: linear-gradient(
-    176deg,
+    177deg,
     transparent 0%,
-    transparent 43%,
-    rgba(255, 102, 0, 1) 44%,
+    transparent 34%,
+    rgba(255, 102, 0, 1) 35%,
     rgba(255, 102, 0, 1) 100%
   );
   position: absolute;
@@ -65,7 +54,11 @@ header {
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 100px;
+}
+
+.position-label {
+  font-size: 2rem;
 }
 
 h2,
@@ -76,8 +69,8 @@ h3 {
 }
 .cv-side-bar {
   z-index: 1;
-  margin-top: -80px;
-  padding-top: 80px;
+  margin-top: -100px;
+  padding-top: 100px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) !important;
   .profile-pic {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) !important;
@@ -92,17 +85,36 @@ h3 {
   color: rgba(255, 102, 0, 1);
 }
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fbf3f3;
-  position: relative;
-  left: -15px;
+  background-color: #e5e5e5;
+  margin-left: -20px !important;
 
   .no-bullets {
     list-style-type: none;
   }
 }
 
-ul li::marker {
-  color: rgba(255, 102, 0, 1);
+.bullets {
+  padding-inline-start: 16px;
+  li::marker {
+    color: rgba(255, 102, 0, 1);
+  }
+}
+
+.font-weight-6 {
+  font-weight: 600;
+}
+
+.margin-fix {
+  margin-left: 5px;
+}
+
+.experience {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media print {
+  .cv-wrapper {
+    margin: 0;
+    width: 100%;
+  }
 }
